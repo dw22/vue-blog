@@ -1,0 +1,65 @@
+html{
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+body{
+  font-family: 'Lato', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 14px;
+  background: #eaedee;
+  color: #555;
+}
+*,ul,li,a,div{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+p,h1,h2,h3,h4,h5,h6,pre{
+  margin-bottom: 15px;
+}
+ul,li{list-style: none}
+a{text-decoration: none}
+i{font-style: normal}
+h1 {font-size: 3rem;}
+h2 {font-size: 2.6rem;}
+h3 {font-size: 2.4rem;}
+h4 {font-size: 2.0rem;}
+h5 {font-size: 1.6rem;}
+h6 {font-size: 1.4rem;}
+#app{
+  position: relative;
+  min-height: 100%;
+  min-width: 800px;
+}
+[v-block]{
+  display: none;
+}
+.fun-main{
+  overflow-y: auto;
+}
+pre{
+  color: #abb2bf;
+  background: #282c34;
+  padding: 10px 20px;
+  overflow: auto;
+}
+blockquote{
+  padding: 0 15px;
+  color: #666;
+  border-left: 4px solid #ddd;
+}
+code{
+  padding: 2px 4px;
+  word-break: break-all;
+  color: #555;
+  background: #eee;
+  border-radius: 4px;
+}
+pre code{
+  padding: 0;
+  color: inherit;
+  background: inherit;
+  display: block;
+}

@@ -1,0 +1,90 @@
+html,body{height: 100%}
+html{
+  font-size: 62.5%;
+}
+body{
+  font:14px/1.62 "Georgia", "Xin Gothic","Microsoft YaHei";
+  min-height: 100%;
+}
+*,ul,li,div,p{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+a{text-decoration: none}
+#app {
+  color: #2c3e50;
+  display: flex;
+  height: 100%;
+}
+#app .el-menu-item{
+  height: 45px;
+  line-height: 45px;
+}
+#app .is-active{
+  background: #35B3F8;
+  color:#ffffff;
+}
+
+#app .el-dragger{
+  width: 320px;
+}
+#app .el-message{
+  border: 1px solid #ccc;
+}
+img{
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  text-indent: -1px;
+  font-size: 3.2rem;
+}
+h2 {
+  text-indent: -1px;
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2.0rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+h6 {
+  font-size: 1.4rem;
+}
+.CodeMirror{
+  flex:1;
+}
+pre,.editor-preview pre, .editor-preview-side pre{
+  color: #abb2bf;
+  background: #282c34;
+  padding: 0 20px;
+  overflow: auto;
+}
+blockquote{
+  padding: 0 15px;
+  color: #666;
+  border-left: 4px solid #ddd;
+}
+code{
+  padding: 2px 4px;
+  word-break: break-all;
+  color: #555;
+  background: #eee;
+  border-radius: 4px;
+}
+pre code{
+  padding: 0;
+  color: inherit;
+  background: inherit;
+  display: block;
+}
