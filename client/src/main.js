@@ -9,7 +9,7 @@ import App from './App'
 import Index from './views/index'
 import Article from './views/article'
 import Category from './views/category'
-import CategoryForName from './views/category_for_name'
+import Archives from './views/archives'
 import Tag from './views/tag'
 
 Vue.use(VueRouter)
@@ -21,7 +21,7 @@ const routers = [
   {path:'/',component:Index},
   {path:'/article/:id',component:Article},
   {path:'/category',component:Category},
-  {path:'/category/:name',component:CategoryForName},
+  {path:'/archives',component:Archives},
   {path:'/tag',component:Tag},
   {path:'/tag/:name',component:Index}
 ]

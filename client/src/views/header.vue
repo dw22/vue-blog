@@ -22,13 +22,11 @@
          current:'/',
          nav:[
            {'path':'/',name:'文章'},
-//           {'path':'/category',name:'分类'},
-//           {'path':'/website',name:'站点'}
+           {'path':'/archives',name:'归档'},
          ]
       }
     },
     mounted(){
-      console.log(this.$route.path)
       this.current = this.$route.path;
     },
     methods:{

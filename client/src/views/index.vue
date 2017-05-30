@@ -67,11 +67,14 @@
     padding: 20px 0 62px;
   }
   .fun-post .fun-post-item{
+    position: relative;
     padding: 10px 35px 35px 35px;
     background: #ffffff;
     margin-bottom: 20px;
-    position: relative;
     overflow: hidden;
+    -webkit-box-shadow: 0 0 14px #cacbcb;
+       -moz-box-shadow: 0 0 14px #cacbcb;
+            box-shadow: 0 0 14px #cacbcb;
   }
   .fun-post .fun-post-item-title{
     font-size: 26px;

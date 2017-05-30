@@ -1,5 +1,5 @@
 <template>
-  <div v-block class="fun-post-detail">
+  <div v-cloak class="fun-post-detail">
     <section>
       <article class="fun-post-item">
         <header>
@@ -16,7 +16,7 @@
         <div class="fun-post-body" v-html="article.content"></div>
       </article>
     </section>
-    <Comments></Comments>
+    <Comments :sourceId="sourceId"></Comments>
   </div>
 </template>
 <script>
@@ -29,16 +29,16 @@
     data(){
       return {
         article : {},
-        show:false
+        sourceId:''
       }
     },
     mounted(){
-      this.show = false
       this.getArticle()
     },
     methods:{
       getArticle(){
         let id = this.$route.params.id
+        this.sourceId = id
         axios.get('/api/article/'+id)
           .then((res)=>{
             this.article = res.data.data;

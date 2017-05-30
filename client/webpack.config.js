@@ -1,11 +1,11 @@
 /**
  * Created by wanrenya on 2017/2/24.
  */
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const config = require('./config.prod')
 module.exports = {
   entry: './src/main.js',
   output: {
@@ -90,6 +90,9 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
-    })
+    }),
+    new webpack.DefinePlugin({
+      'APPKEY': JSON.stringify(config.appkey)
+    }),
   ])
 }

@@ -160,4 +160,12 @@ router.get('/category/:name',(req,res)=>{
       res.json({data:result,category:name})
     })
 })
+router.get('/archivesList',(req,res)=>{
+  let name = req.params.name;
+  let sql = 'select id,title,publishtime from post order by publishtime desc'
+  db.execSql(sql)
+    .then(function(result){
+      res.json({data:result,category:name})
+    })
+})
 module.exports = router
