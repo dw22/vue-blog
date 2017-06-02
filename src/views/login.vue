@@ -28,7 +28,7 @@
           })
           return;
         }
-        document.cookie = 'o-token='+ Math.random(1,10000);
+        document.cookie = 'o-token='+ Math.random(10000);
         this.$router.push('addPost')
       }
     }

@@ -9,6 +9,7 @@ const routes = [
     path:'/',
     component:Main,
     children:[
+      {path:'/',component:AddPost},
       {path:'/addPost',component:AddPost},
       {path:'/editPost',component:AddPost},
       {path:'/postList',component:PostList},
