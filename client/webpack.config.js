@@ -76,7 +76,11 @@ module.exports = {
     }
   },
   devtool: '#cheap-module-eval-source-map',
-  plugins: []
+  plugins: [
+    new webpack.DefinePlugin({
+      'APPKEY': JSON.stringify(config.appkey)
+    })
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {
@@ -90,9 +94,6 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: true
-    }),
-    new webpack.DefinePlugin({
-      'APPKEY': JSON.stringify(config.appkey)
-    }),
+    })
   ])
 }

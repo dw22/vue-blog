@@ -7,7 +7,7 @@ const shortid = require('shortid');
 const DB = {
   db:undefined,
   connect:function(){
-    this.db = new sqlite3.Database(__dirname + '/data/sqlite3.db');
+    this.db = new sqlite3.Database(require('path').join(__dirname,'../data/sqlite3.db'));
     this.createTable();
   },
   createTable:function(){

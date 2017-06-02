@@ -20,7 +20,7 @@
           window.cloudTieConfig = {
             url: '', 
             sourceId: _this.sourceId,
-            productKey: APPKEY || '',
+            productKey: APPKEY,
             target: "cloud-tie-wrapper"
           };
           var yunManualLoad = true;
